@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CPU Scheduling Visualizer</title>
+</head>
+<body>
+    <h1 class="main-title">CPU Scheduling Visualizer</h1>
+    <div class="form">
+        <p class="algorithm-title">Select the Scheduling Algorithm:</p>
+        <select class="algorithm-select" name="algorithm" id="algorithm">
+            <option value="fifo">First In First Out (FIFO)</option>
+            <option value="sjf">Shortest Job First (SJF)</option>
+            <option value="rr">Round Robin</option>
+            <option value="priority">Priority Scheduling</option>
+        </select>
+        <p class="algorithm-title">Quantum Time (for Round Robin):</p>
+        <input class="algorithm-select" type="number" id="quantum" min="1" placeholder="Enter Quantum Time">
+        <div class="input-table">
+            <table class="table" border="1" style="width: 100%; text-align: center; color: white;">
+                <tr>
+                    <th>Process No</th>
+                    <th>Arrival Time</th>
+                    <th>Burst Time</th>
+                    <th>Priority</th>
+                    <th>Completion</th>
+                    <th>Turnaround Time</th>
+                    <th>Waiting Time</th>
+                </tr>
+          
+                <tr>
+                    <td>P0</td>
+                    <td><input class="inp arrival-time" type="number" min="0" placeholder="0"></td>
+                    <td><input class="inp burst-time" type="number" min="1" placeholder="1"></td>
+                    <td><input class="inp priority" type="number" min="0" placeholder="0"></td>
+                    <td class="completion-time"></td>
+                    <td class="turnaround-time"></td>
+                    <td class="waiting-time"></td>
+                </tr>
+                <tr>
+                    <td>P1</td>
+                    <td><input class="inp arrival-time" type="number" min="0" placeholder="0"></td>
+                    <td><input class="inp burst-time" type="number" min="1" placeholder="1"></td>
+                    <td><input class="inp priority" type="number" min="0" placeholder="0"></td>
+                    <td class="completion-time"></td>
+                    <td class="turnaround-time"></td>
+                    <td class="waiting-time"></td>
+                </tr>
+                <tr>
+                    <td>P2</td>
+                    <td><input class="inp arrival-time" type="number" min="0" placeholder="0"></td>
+                    <td><input class="inp burst-time" type="number" min="1" placeholder="1"></td>
+                    <td><input class="inp priority" type="number" min="0" placeholder="0"></td>
+                    <td class="completion-time"></td>
+                    <td class="turnaround-time"></td>
+                    <td class="waiting-time"></td>
+                </tr>
+                <tr>
+                    <td>P3</td>
+                    <td><input class="inp arrival-time" type="number" min="0" placeholder="0"></td>
+                    <td><input class="inp burst-time" type="number" min="1" placeholder="1"></td>
+                    <td><input class="inp priority" type="number" min="0" placeholder="0"></td>
+                    <td class="completion-time"></td>
+                    <td class="turnaround-time"></td>
+                    <td class="waiting-time"></td>
+                </tr>
+                <tr>
+                    <td>P4</td>
+                    <td><input class="inp arrival-time" type="number" min="0" placeholder="0"></td>
+                    <td><input class="inp burst-time" type="number" min="1" placeholder="1"></td>
+                    <td><input class="inp priority" type="number" min="0" placeholder="0"></td>
+                    <td class="completion-time"></td>
+                    <td class="turnaround-time"></td>
+                    <td class="waiting-time"></td>
+                </tr>
+                <tr>
+                    <td>P5</td>
+                    <td><input class="inp arrival-time" type="number" min="0" placeholder="0"></td>
+                    <td><input class="inp burst-time" type="number" min="1" placeholder="1"></td>
+                    <td><input class="inp priority" type="number" min="0" placeholder="0"></td>
+                    <td class="completion-time"></td>
+                    <td class="turnaround-time"></td>
+                    <td class="waiting-time"></td>
+                </tr>
+                <tr>
+                    <td>P6</td>
+                    <td><input class="inp arrival-time" type="number" min="0" placeholder="0"></td>
+                    <td><input class="inp burst-time" type="number" min="1" placeholder="1"></td>
+                    <td><input class="inp priority" type="number" min="0" placeholder="0"></td>
+                    <td class="completion-time"></td>
+                    <td class="turnaround-time"></td>
+                    <td class="waiting-time"></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <button onclick="calculate()" style="margin-top: 20px;">Calculate</button>
+            <div id="ganttChart" style="margin-top: 20px;"></div>
+        </div>
+        <script src="app.js"></script>
+    </div>
+</body>
+</html>

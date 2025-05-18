@@ -1,0 +1,124 @@
+body {
+    background-color: rgb(156, 156, 156);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+h1.main-title {
+    color: white;
+    font-size: 36px;
+    margin: 20px 0;
+}
+.algorithm-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(219, 214, 214);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.form {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(255, 103, 103);
+    height: auto;
+    margin: 20px auto;
+    width: 80%;
+    text-align: left;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.algorithm-select {
+    width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 5px 10px;
+    color: rgb(153, 153, 153);
+    height: 30px;
+    border: 1px solid #ccc;
+    background-color: rgb(54, 53, 53);
+}
+
+.input-table {
+    margin-top: 30px;
+    overflow-x: auto;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: white;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+th {
+    width: 14%;
+    color: rgb(213, 213, 213);
+    background-color: rgb(22, 22, 22);
+    font-weight: bold;
+}
+.inp {
+    text-align: center;
+    font-size: 16px;
+    width: 90%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgb(54, 53, 53);
+    color: white;
+    padding: 5px;
+}
+tr {
+    height: 50px;
+}
+#ganttChart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5px;
+    margin-top: 20px;
+    max-width: 100%; 
+    overflow-x: auto;
+}
+.gantt-block {
+    display: inline-block;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    min-width: 50px;
+}
+.gantt-time {
+    font-size: 12px;
+    color: white;
+    margin-top: 5px;
+    text-align: center;
+}
+th:hover {
+    background-color: rgb(30, 30, 30);
+    cursor: pointer;
+}
+.gantt-block:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+button:hover {
+    background-color: #0056b3;
+}
